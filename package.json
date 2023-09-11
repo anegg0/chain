@@ -1,7 +1,14 @@
 {
-  "name": "mycontracts",
+  "name": "chain",
   "version": "0.0.1",
-  "description": "",
+  "private": true,
+  "license": "MIT",
+  "author": "Gael Blanchemain",
+  "description": "SIG-VANT webapp, based on Next.js and Wagmi",
+  "repository": {
+    "type": "git"
+  },
+  "keywords": ["NFT", "steganography", "SIGVANT", "EVM", "watermark", "EVM"],
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.1",
     "@nomicfoundation/hardhat-ethers": "^3.0.2",
