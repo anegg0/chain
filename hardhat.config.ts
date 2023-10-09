@@ -92,6 +92,11 @@ const config: HardhatUserConfig = {
 		project: 'template-ethereum-contracts',
 		username: process.env.TENDERLY_USERNAME as string,
 	},
+	verify: {
+		etherscan: {
+			apiKey: process.env.ETHERSCAN_API_KEY as string,
+		},
+	},
 };
 
 export default config;

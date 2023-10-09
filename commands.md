@@ -7,4 +7,6 @@ npx hardhat deploy --network
 ```
 
 
-0x210A84834e519a5f167D2475A600Bd0f54aA9D82
+## Etherscan verify
+
+`npx hardhat --network sepolia etherscan-verify --api-key 93WKR2TBA7T6AW17J3CICIQDS4XXWGG817 --api-url https://api-sepolia.etherscan.io/api/93WKR2TBA7T6AW17J3CICIQDS4XXWGG817`
