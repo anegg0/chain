@@ -26,17 +26,14 @@ contract Watermarked is ERC721URIStorage, Ownable {
         return string.concat("data:application/json;utf8,", json);
     }
 
-
-    function mintItem(address player, string memory tokenURI)
+    function mintItem(address creator, string memory tokenURI)
         public
-        onlyOwner
         returns (uint256)
     {
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
-        _mint(player, newItemId);
+        _mint(creator, newItemId);
         _setTokenURI(newItemId, tokenURI);
         return newItemId;
     }
-
 }
